@@ -17,7 +17,6 @@ app.use("/banking", bankingController); // /banking/...
 app.use("/pools", poolsController); // /pools
 
 app.get("/", (_req, res) => res.json({ status: "ok", service: "FuelEU-backend" }));
-
 const PORT = Number(process.env.PORT ?? 4000);
 if (require.main === module) {
   app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
