@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { getRoutes, setBaseline } from "../routesApi";
-import type { Route } from "../../domain/Route";
+import type { Route } from "../../../../core/domain/Route";
 
 export const useRoutes = (filters?: any) => {
   const qc = useQueryClient();
