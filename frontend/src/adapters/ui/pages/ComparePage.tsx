@@ -18,14 +18,15 @@ type ComparisonData = {
 };
 
 export default function ComparePage() {
-  const { data, isLoading, error } = useComparison<ComparisonData>();
+  const { data, isLoading, error } = useComparison();
 
   if (isLoading) return <p>Loading comparison...</p>;
   if (error) return <p className="text-red-600">Error loading comparison</p>;
 
-  const baseline = data?.baseline;
-  const comparisons = data?.comparisons ?? [];
-  const chartSeries = (data?.chartSeries) ?? [
+  const typedData = data as ComparisonData;
+  const baseline = typedData?.baseline;
+  const comparisons = typedData?.comparisons ?? [];
+  const chartSeries = (typedData?.chartSeries) ?? [
     { label: baseline?.routeId ?? "baseline", value: baseline?.ghgIntensity ?? 0 },
     ...comparisons.map((c: any) => ({ label: c.routeId, value: c.ghgIntensity })),
   ];

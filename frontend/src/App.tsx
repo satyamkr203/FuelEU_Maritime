@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link, Routes, Route, Navigate } from "react-router-dom";
 import RoutesPage from "./adapters/ui/pages/RoutesPage";
 import ComparePage from "./adapters/ui/pages/ComparePage";
