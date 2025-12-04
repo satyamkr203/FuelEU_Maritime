@@ -441,41 +441,6 @@ Reference document: `2025-May-ESSF-SAPS-WS1-FuelEU-calculation-methodologies.pdf
 
 ---
 
-## 🎯 Evaluation Checklist
-
-### Architecture ✅
-- [x] Proper hexagonal separation (core ↔ adapters)
-- [x] No framework dependencies in core layer
-- [x] Clear ports and adapters implementation
-
-### Functionality ✅
-- [x] Routes tab with filtering and baseline setting
-- [x] Compare tab with baseline comparison and charts
-- [x] Banking tab with CB calculation and operations
-- [x] Pooling tab with validation and allocation
-
-### Code Quality ✅
-- [x] TypeScript strict mode enabled
-- [x] ESLint configuration
-- [x] Clean naming conventions
-- [x] Proper error handling
-
-### UI/UX ✅
-- [x] Responsive design with TailwindCSS
-- [x] Clear data visualization (charts, tables)
-- [x] Accessible navigation
-- [x] Error states and loading indicators
-
-### AI-Agent Use ✅
-- [x] AGENT_WORKFLOW.md documentation
-- [x] REFLECTION.md essay
-- [x] Architecture documentation
-
-### Testing ⚠️
-- [ ] Unit tests (left for later as per assignment)
-- [ ] Integration tests (left for later as per assignment)
-
----
 
 ## 📝 Available Scripts
 
@@ -529,21 +494,3 @@ npm run prisma:generate
 CORS is enabled in the backend. If you encounter issues, check the `cors` configuration in `backend/src/infrastructure/server.ts`.
 
 ---
-
-## 📄 License
-
-ISC
-
----
-
-## 👤 Author
-
-Full-Stack Developer Assignment - FuelEU Maritime Compliance Platform
-
----
-
-## 🙏 Acknowledgments
-
-- Fuel EU Maritime Regulation (EU) 2023/1805
-- Hexagonal Architecture pattern
-- React, Express, Prisma communities
