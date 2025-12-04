@@ -8,4 +8,4 @@ export const useAdjustedCB = (year?: number) =>
     return r.data;
   }, { enabled: !!year });
 
-export const useCreatePool = () => useMutation((body: any) => createPool(body).then(r => r.data));
+export const useCreatePool = () => useMutation<any, Error, any>((body: any) => createPool(body).then(r => r.data));
