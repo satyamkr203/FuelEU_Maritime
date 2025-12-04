@@ -51,12 +51,12 @@ router.post("/apply", async (req: Request, res: Response) => {
     if (!shipId || !year || typeof amount !== "number") return res.status(400).json({ error: "shipId, year, amount required" });
     if (amount <= 0) return res.status(400).json({ error: "amount must be positive" });
 
-    // compute available banked
+    // computing available banked
     const resAgg = await prisma.bank_entries.aggregate({ where: { ship_id: shipId, year }, _sum: { amount_gco2eq: true } });
     const available = Number(resAgg._sum.amount_gco2eq ?? 0);
     if (amount > available) return res.status(400).json({ error: "Insufficient banked amount" });
 
-    // create negative entry to represent application
+    // creating negative entry to represent application
     const entry = await prisma.bank_entries.create({ data: { ship_id: shipId, year, amount_gco2eq: -Math.abs(amount) } });
 
     // optional: record applied change in ship_compliance or separate ledger (not implemented)
