@@ -454,12 +454,4 @@ cd backend
 npm run prisma:generate
 ```
 
-### CORS Issues
 
-<<<<<<< HEAD
-CORS is enabled in the backend. If you encounter issues, check the `cors` configuration in `backend/src/infrastructure/server.ts`.
-
----
-=======
-CORS is enabled in the backend. If you encounter issues, check the `cors` configuration in `backend/src/infrastructure/server.ts`.
->>>>>>> 4a72103 (remove .DS_Store)
