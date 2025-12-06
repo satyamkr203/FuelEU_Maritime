@@ -356,31 +356,6 @@ For detailed API documentation, see [backend/README.md](./backend/README.md).
 
 ---
 
-## 🧪 Testing
-
-### Backend Tests
-
-```bash
-cd backend
-npm test
-```
-
-**Note**: Test files are not included in this implementation as per assignment requirements (testing can be left for later).
-
-### Frontend Tests
-
-Frontend testing setup is not included in this implementation.
-
-### Manual Testing
-
-You can use the provided Postman screenshots in `postman_api_sc/` directory as reference for API testing, or use tools like:
-- Postman
-- cURL
-- Thunder Client (VS Code extension)
-- Browser DevTools
-
----
-
 ## 📸 Screenshots
 
 API request/response screenshots are available in the `postman_api_sc/` directory:
@@ -389,16 +364,6 @@ API request/response screenshots are available in the `postman_api_sc/` director
 - `ph_3.png` - Compliance CB endpoint
 - `ph_4.png` - Banking endpoint
 - `ph_5.png` - Pooling endpoint
-
----
-
-## 🤖 AI Agent Usage
-
-This project was developed with the assistance of AI agents (GitHub Copilot, Claude Code, Cursor Agent, etc.). Detailed documentation of AI agent usage, prompts, and workflows can be found in:
-
-- **[AGENT_WORKFLOW.md](./AGENT_WORKFLOW.md)** - Detailed log of AI agent interactions, prompts, and outputs
-- **[REFLECTION.md](./REFLECTION.md)** - Reflection on AI agent usage, efficiency gains, and learnings
-- **[ARCHITECTURE_AGENTIC.md](./ARCHITECTURE_AGENTIC.md)** - Architecture patterns and agentic workflow guidelines
 
 ---
 
